@@ -9,6 +9,7 @@ const LinkForm = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     if (enteredUrl === "") {
+      alert("Blank...");
       setEnteredUrl("");
       linkRef.current.focus();
       return;
